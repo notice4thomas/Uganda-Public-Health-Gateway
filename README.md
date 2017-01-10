@@ -1,26 +1,123 @@
-<!-- Adapted from http://mozillascience.github.io/working-open-workshop -->
-<!-- Be sure to include build, test and other badges here  -->
+Introduction
+============
 
-# Uganda-Public-Health-Gateway
+![Bower version](https://img.shields.io/bower/v/adminlte.svg)
+[![npm version](https://img.shields.io/npm/v/admin-lte.svg)](https://www.npmjs.com/package/admin-lte)
+[![Packagist](https://img.shields.io/packagist/v/almasaeed2010/adminlte.svg)](https://packagist.org/packages/almasaeed2010/adminlte)
 
-The repo to contain the Public Health Science Gateway for Ugandans
-## Outline
+**AdminLTE** -- is a fully responsive admin template. Based on **[Bootstrap 3](https://github.com/twbs/bootstrap)** framework. Highly customizable and easy to use. Fits many screen resolutions from small mobile devices to large desktops. Check out the live preview now and see for yourself.
 
-Hi people, you have finally arrived at the Uganda Portal for Public Health. Currently, we are focusing uppacking the concept of Safe Roads as a enabler of a Safe City (see UN Sustainable Development Goal #11 - Sustainable Cities and Communities). We have started with targetting the Boda Boda economy (motorbike transport) which employs so many young men (120,000 motorcycles in Kampala alone; Data available from Kampala Capital City Authority). The boda boda business could be Uganda’s second largest employer after agriculture. However, this is a worrying trend considering its low contribution to economic growth. 
+**Download & Preview on [Almsaeed Studio](https://almsaeedstudio.com)**
 
-The 2013 report authored by Standard Bank analyst Simon Freemantle and economist Jeremy Stevens measured motorcycle exports from India to seven African countries including Nigeria, Angola, Uganda Egypt, Kenya, Guinea and Djibouti. The findings indicate Nigeria is the largest importer of motor cycles from India followed by Angola with Uganda coming in at third position (Source:Roland Nasasira, 2016.The Daily Monitor.The boda boda economy defining the streets of Kampala.http://www.monitor.co.ug/Business/Prosper/boda-boda-economy-defining-streets-Kampala/688616-2869756-d4bwbo/index.html).
+Looking for Premium Templates?
+------------------------------
+**Almsaeed studio just opened a new premium templates page. Hand picked to insure the best quality and the most affordable prices. Visit https://almsaeedstudio.com/premium for more information.**
 
-However, with the increase of Boda Bodas has come the rise in boda boda related accidents; especially head injuries. At Mulago National Referral Hospital, a casualty ward was created for victims of boda boda accidents; it is populated by so many riders with broken bones. The real question is: "Where do most of the boda boda passengers end up since they usually do not have the chance of jumping off before the accident proves fatal?" Many are crushed under the wheels of passing traffic especially after the headbump renders them unconscious.
 
-## Motivation
-With the support of Sci-GaIA (the African Science Gateway), a project codenamed MALAIKA (Angel) is underway seeking to RETASK commuters and drivers to become first responders, RETOOL the emergency health architecture with modular vehicles eg, modular UAV/unmanned aerial vehicles, and REPURPOSE vehicles of wellwishers into temporary ambulances especially in the Golden Hour. It is designed around  extreme citizen science and the golden hour; using the Sci-GaiA platform to crowdsource citizen journalist reports (riders, commuters and drivers) on road accidents in Uganda with a view of supporting the journey towards safe cities and then smart cities. This project is in line with Uganda's Vision2040 that contains plans to create a National Ambulance Service and National Health Insurance Scheme.
+!["AdminLTE Presentation"] (https://almsaeedstudio.com/AdminLTE2.png "AdminLTE Presentation")
 
-<!-- Show what you're doing, for who, and why. -->
-<!-- Explain what makes your project special, useful, exciting! -->
+**AdminLTE** has been carefully coded with clear comments in all of its JS, LESS and HTML files. LESS has been used to increase code customizability.
 
-## Contributing
+Installation
+------------
+There are multiple ways to install AdminLTE.
 
-<!-- Show how to get started using or contribution to the project -->
-See [the contributing file](CONTRIBUTING.md)
+####Download:
 
-<!-- State what resources and contributions you're looking for -->
+Download from Github or [visit Almsaeed Studio](https://almsaeedstudio.com) and download the latest release.
+
+####Using The Command Line:
+
+**Github**
+
+- Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
+- Clone to your machine
+```
+git clone https://github.com/YOUR_USERNAME/AdminLTE.git
+```
+
+**Bower**
+
+```
+bower install admin-lte
+```
+
+**npm**
+
+```
+npm install --save admin-lte
+```
+
+**Composer**
+
+```
+composer require "almasaeed2010/adminlte=~2.0"
+```
+
+Documentation
+-------------
+Visit the [online documentation](https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html) for the most
+updated guide. Information will be added on a weekly basis.
+
+Browser Support
+---------------
+- IE 9+
+- Firefox (latest)
+- Chrome (latest)
+- Safari (latest)
+- Opera (latest)
+
+Contribution
+------------
+Contribution are always **welcome and recommended**! Here is how:
+
+- Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
+- Clone to your machine ```git clone https://github.com/YOUR_USERNAME/AdminLTE.git```
+- Make your changes
+- Create a pull request
+
+#### Contribution Requirements:
+
+- When you contribute, you agree to give a non-exclusive license to Almsaeed Studio to use that contribution in any context as we (Almsaeed Studio) see appropriate.
+- If you use content provided by another party, it must be appropriately licensed using an [open source](http://opensource.org/licenses) license.
+- Contributions are only accepted through Github pull requests.
+- Finally, contributed code must work in all supported browsers (see above for browser support).
+
+License
+-------
+AdminLTE is an open source project by [Almsaeed Studio](https://almsaeedstudio.com) that is licensed under [MIT](http://opensource.org/licenses/MIT). Almsaeed Studio
+reserves the right to change the license of future releases.
+
+Todo List
+---------
+- ~~Light sidebar colors~~ (Done v2.1.0)
+- ~~Right sidebar~~ (Done v2.1.0)
+- ~~Minified main-sidebar~~ (Done v2.1.0)
+- Right to left support
+- ~~Custom pace style~~ (Done v2.3.1)
+
+Legacy Releases
+----------------
+AdminLTE 1.x can be easily upgraded to 2.x using [this guide](https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html#upgrade), but if you intend to keep using AdminLTE 1.x, you can download the latest release from the [releases](https://github.com/almasaeed2010/AdminLTE/releases) section above.
+
+Change log
+----------
+**For the most recent change log, visit the [releases page](https://github.com/almasaeed2010/AdminLTE/releases) or the [changelog file](https://github.com/almasaeed2010/AdminLTE/blob/master/changelog).** We will add a detailed release notes to each new release. 
+
+Image Credits
+-------------
+[Pixeden](http://www.pixeden.com/psd-web-elements/flat-responsive-showcase-psd)
+
+[Graphicsfuel](http://www.graphicsfuel.com/2013/02/13-high-resolution-blur-backgrounds/)
+
+[Pickaface](http://pickaface.net/)
+
+[Unsplash](https://unsplash.com/)
+
+[Uifaces](http://uifaces.com/)
+
+Donations
+---------
+Donations are **greatly appreciated!**
+
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif "AdminLTE Presentation")](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=629XCUSXBHCBC "Donate")
