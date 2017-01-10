@@ -1,9 +1,9 @@
-# Uganda-Public-Health-Gateway
+# 1SMILE project: Square Mile Infrastructure Leveraged for Emergencies
 
 The repo to contain the Public Health Science Gateway for Ugandans
 ## Outline
 
-Hi people, you have finally arrived at the Uganda Portal for Public Health. Currently, we are focusing uppacking the concept of Safe Roads as a enabler of a Safe City (see UN Sustainable Development Goal #11 - Sustainable Cities and Communities). We have started with targetting the Boda Boda economy (motorbike transport) which employs so many young men (120,000 motorcycles in Kampala alone; Data available from Kampala Capital City Authority). The boda boda business could be Uganda’s second largest employer after agriculture. However, this is a worrying trend considering its low contribution to economic growth. 
+Hi people, you have finally arrived at the Uganda Portal for Public Health. Currently, we are focusing uppacking the concept of Safe Roads as a enabler of a Safe City (see UN Sustainable Development Goal #11 - Sustainable Cities and Communities). We have started with targetting the Boda Boda economy (motorbike transport) which employs so many young men (300,000 motorcycles in Kampala alone; Data available from Kampala Capital City Authority). The boda boda business could be Uganda’s second largest employer after agriculture. However, this is a worrying trend considering its low contribution to economic growth. 
 
 The 2013 report authored by Standard Bank analyst Simon Freemantle and economist Jeremy Stevens measured motorcycle exports from India to seven African countries including Nigeria, Angola, Uganda Egypt, Kenya, Guinea and Djibouti. The findings indicate Nigeria is the largest importer of motor cycles from India followed by Angola with Uganda coming in at third position (Source:Roland Nasasira, 2016.The Daily Monitor.The boda boda economy defining the streets of Kampala.http://www.monitor.co.ug/Business/Prosper/boda-boda-economy-defining-streets-Kampala/688616-2869756-d4bwbo/index.html).
 
