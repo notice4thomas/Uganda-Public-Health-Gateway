@@ -8,7 +8,10 @@ Hi people, you have finally arrived at the Uganda Portal for Public Health. Curr
 The 2013 report authored by Standard Bank analyst Simon Freemantle and economist Jeremy Stevens measured motorcycle exports from India to seven African countries including Nigeria, Angola, Uganda Egypt, Kenya, Guinea and Djibouti. The findings indicate Nigeria is the largest importer of motor cycles from India followed by Angola with Uganda coming in at third position (Source:Roland Nasasira, 2016.The Daily Monitor.The boda boda economy defining the streets of Kampala.http://www.monitor.co.ug/Business/Prosper/boda-boda-economy-defining-streets-Kampala/688616-2869756-d4bwbo/index.html).
 
 However, with the increase of Boda Bodas has come the rise in boda boda related accidents; especially head injuries. At Mulago National Referral Hospital, a casualty ward was created for victims of boda boda accidents; it is populated by so many riders with broken bones. The real question is: "Where do most of the boda boda passengers end up since they usually do not have the chance of jumping off before the accident proves fatal?" Many are crushed under the wheels of passing traffic especially after the headbump renders them unconscious.
-Less than 6 percent of injury patients arrive by ambulance at Mulago national referral hospital. According to officials at Mulago Hospital, 30 percent of patients are lost at the causality ward out of the over 1000 patients received monthly. Injuries make up half of all the admissions in all hospitals countrywide. These range from accident victims, burns, gender based violence victims, animal bites, falls and drowning among others (Source:https://ugandaradionetwork.com/story/6-percent-of-patients-arrive-in-mulago-by-ambulance).Our use case is the 1SMILE project which stands for Square Mile Infrastructure Leveraged for Emergencies; it targets 'Boda Boda'; a local term for "commercial motorcycles".
+Less than 6 percent of injury patients arrive by ambulance at Mulago national referral hospital. According to officials at Mulago Hospital, 30 percent of patients are lost at the causality ward out of the over 1000 patients received monthly. Injuries make up half of all the admissions in all hospitals countrywide. These range from accident victims, burns, gender based violence victims, animal bites, falls and drowning among others (Source:https://ugandaradionetwork.com/story/6-percent-of-patients-arrive-in-mulago-by-ambulance).
+
+## 1SMILE
+Our use case is the 1SMILE project which stands for Square Mile Infrastructure Leveraged for Emergencies; it targets 'Boda Boda'; a local term for "commercial motorcycles".
 
 Our Value Proposition.
 For local first responders seeking to eliminate the Boda-Boda related accidents, 1SMILE is an uber for ambulance service for the 300,000 Boda Boda cyclists and their passengers to monitor the State of Care in Ambulances and Roads (SCAR) as last mile care infrastructure around accident blackspots in Kampala Capital City
@@ -16,7 +19,7 @@ By repurposing 1000 'Good Samaritans' into a Community of Purpose for Blackspot 
 Retasking 100 roadside Boda Boda parking stages as ARCs (Ambulance and Rescue Centres) through Guided Mastery of First Aid skills, and 
 Retooling 10 Boda Boda motorcycles into BBAs (Boda Boda Ambulances) to deliver paramedics to the accident site within 15 minutes from an ACE (Ambulance Centres of Excellence) on the European Union-funded Northern Bypass by December 2017.
 
-
+## Statistics
 Using statistics from Mulago National Referral Hospital and World Health Organisation, we found that 
 Boda-Boda related accidents that are killing and maiming young people at a rate of 
 1 casualty per hour (ie, 20 BB cases per day. WHO, Mulago National Referral Hospital),
@@ -40,7 +43,7 @@ The proposed National Health Insurance Scheme will only have meaning when augmen
 <!-- Explain what makes your project special, useful, exciting! -->
 
 
-REFERENCES regarding your use case
+## References regarding your use case
 
 Nnajjuma, Hellen (2013). Road Traffic Accidents in Uganda in view of Taxi Drivers Masaka District. Master’s Thesis in Human Development. Trondheim, Autumn 2013.
 
