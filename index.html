@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  	<title>Blackspot Detective</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="boda boda mobility motorcycle public health">
+    <meta name="author" content="www.1smile.org">
+
+	<!-- styles -->
+	<link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"  />
+	
+    <link href="css/camera.css" rel="stylesheet" type="text/css" >
+	<link href="css/style.css" rel="stylesheet" type="text/css" >
+	<link href="css/menu.min.css" rel="stylesheet" type="text/css" >
+	<link href="css/roboto.css" rel="stylesheet" type="text/css" >
+	<link href="css/small-n-flat.css" rel="stylesheet" type="text/css" >
+	
+	<!-- FAB Button 2. bottom -->
+	<link rel="stylesheet" href="css/kc.fab.css"/>
+	<!-- js -->
+	<script src="js/modernizr.custom.97074.js"></script>
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+	
+	<!-- FAB Button 1. top -->
+	<style>
+		body {
+		   font-size: 120%; 
+		  color: #fff;
+		  padding: 0;
+		  margin: 0;
+		}
+
+		main {
+		  display: block;
+		  box-sizing: border-box;
+		  width: 90%;
+		  margin: 1em auto;
+		  padding: 1em;
+		  color: #000;
+		  background-color: rgba(255,255,255,.25);
+		  border: .07em solid rgba(0,0,0,.5);
+		  border-radius: .5em;
+		}
+
+		a { color: #009; }
+
+		/* The fully-expanded menu is just over 23em, so this will show another menu up to that width or height. */
+
+		@media (max-width:23em), (max-height:22em) {
+
+		nav1 {
+		  /*border: 1px dotted #f00;*/
+		  box-sizing: border-box;
+		  padding: 0;
+		  margin: 0;
+		  background-color: #000;
+		}
+
+		nav1::after {
+		  content: "";
+		  display: block;
+		  clear: both;
+		}
+
+		nav1 h1 { display: none; }
+
+		nav1 ol,
+		nav1 li {
+		  margin: 0;
+		  padding: 0;
+		  list-style-type: none;
+		}
+
+		nav1 ol ol { display: none; }
+
+		nav1 a {
+		  display: block;
+		  box-sizing: border-box;
+		  width: 50%;
+		  float: left;
+		  margin: 0;
+		  padding: 1em 0;
+		  text-align: center;
+		  color: #fff;
+		  background-color: #000;
+		  text-decoration: none;
+		  outline: none;
+		  border: .07em solid #333;
+		}
+
+		nav1 li:hover a,
+		nav1 li:focus a,
+		nav1 li.focus a {
+		  background-color: #222;
+		  outline: none;
+		}
+
+		nav1>ol>li a[aria-label^="Current"],
+		nav1>ol>li:hover a[aria-label^="Current"],
+		nav1>ol>li:focus a[aria-label^="Current"] { color: #444; }
+		}
+
+		/* Short, wide display */
+
+		@media (min-width:23em) and (max-height:22em) {
+
+		nav1 a { width: 33.333%; }
+		}
+
+		/* Short, wider display */
+
+		@media (min-width:32em) and (max-height:22em) {
+
+		nav1 a { width: 25%; }
+		}
+
+		/* Short, wider display */
+
+		@media (min-width:40em) and (max-height:22em) {
+
+		nav1 a { width: 20%; }
+		}
+
+		/* Short, even wider display */
+
+		@media (min-width:48em) and (max-height:22em) {
+
+		nav1 a { width: 16.666667%; }
+		}
+
+		/* The screen is now wide and tall enough to show the entire menu without cutting anything off. */
+
+		@media (min-width:23em) and (max-width:1800px) and (min-height:22em) {
+
+		nav1 {
+		  /*border: 1px dotted #f00;*/
+		  box-sizing: border-box;
+		  position: fixed;
+		  top: 0;
+		  right: 0;
+		  padding: 0;
+		  border-radius: 0 0 0 100%;
+		  width: 2em;
+		  height: 2em;
+		  /*overflow: hidden;*/
+		  transition: all .25s ease-in;
+		}
+
+		nav1:hover,
+		nav1:focus,
+		nav1.focus {
+		  background-color: rgba(0, 0, 0, 0.4);
+		  width: 18em;
+		  height: 17em;
+		  outline: none;
+		}
+
+		nav1 h1 {
+		  box-sizing: border-box;
+		  font-size: 100%;
+		  text-transform: uppercase;
+		  font-weight: normal;
+		  /*border: 1px dotted yellow;*/
+		  position: fixed;
+		  top: 0;
+		  right: 0;
+		  margin: 0;
+		  padding: 1em .5em 2.3em 1.8em;
+		  border-left: .15em solid #fff;
+		  border-bottom: .15em solid #fff;
+		  background-color: rgba(156, 39, 176, 1);
+		  border-radius: 0 0 0 100%;
+		  z-index: 50;
+		}
+
+		nav1 ol,
+		nav1 li {
+		  margin: 0;
+		  padding: 0;
+		  list-style-type: none;
+		}
+
+		nav1 li { position: absolute; }
+
+		nav1 li,
+		nav1 a {
+		  display: block;
+		  box-sizing: border-box;
+		  /*position: absolute;*/
+			/*position: relative;*/
+		  top: -5em;
+		  right: -5em;
+		  /*border: 1px dotted #f00;*/
+		  transition: all 0.2s ease-in;
+		}
+
+		nav1 a {
+		  border-radius: 100%;
+		  border: .15em solid rgba(156, 39, 176, 1);
+		  padding: 1.5em 0;
+		  margin-top: -5px;
+		  width: 4.5em;
+		  height: 4.5em;
+		  overflow: hidden;
+		  text-align: center;
+		  box-shadow: 0 0 1.5em rgba(156, 39, 176, 0.2);
+		  color: #fff;
+		  background-color: #000;
+		  text-decoration: none;
+		  outline: none;
+		}
+
+		nav1>ol>li,
+		nav1>ol>li>a { /* So the first tier sits on top of the second tier disk */ z-index: 10; }
+
+		nav1 li:hover a,
+		nav1 li:focus a,
+		nav1 li.focus a {
+		  background-color: rgba(156, 39, 176, 1);
+		  box-shadow: 0 0 1.5em rgba(0, 0, 0, 1);
+		  outline: none;
+		  position: relative;
+		  left: 0;
+		  color: #fff;
+		  top: auto;/*z-index: 25;*/
+		}
+
+		nav1>ol>li:hover,
+		nav1>ol>li:focus,
+		nav1>ol>li.focus { /* Keep this to make sure only the current item appears above the disc. */ z-index: 25; }
+
+		/* Just hide anything beyond 5*/
+		  
+
+
+		nav1>ol>li:nth-child(n+6) { display: none; }
+
+		/* Positioning the first tier */
+
+
+
+		nav1:hover>ol>li:nth-child(1),
+		nav1:focus>ol>li:nth-child(1),
+		nav1.focus>ol>li:nth-child(1) {
+		  right: 13.5em;
+		  top: .2em;
+		}
+
+		nav1:hover>ol>li:nth-child(2),
+		nav1:focus>ol>li:nth-child(2),
+		nav1.focus>ol>li:nth-child(2) {
+		  right: 12em;
+		  top: 4.75em;
+		}
+
+		nav1:hover>ol>li:nth-child(3),
+		nav1:focus>ol>li:nth-child(3),
+		nav1.focus>ol>li:nth-child(3) {
+		  right: 9.0em;
+		  top: 8.5em;
+		}
+
+		nav1:hover>ol>li:nth-child(4),
+		nav1:focus>ol>li:nth-child(4),
+		nav1.focus>ol>li:nth-child(4) {
+		  right: 5em;
+		  top: 11.25em;
+		}
+
+		nav1:hover>ol>li:nth-child(5),
+		nav1:focus>ol>li:nth-child(5),
+		nav1.focus>ol>li:nth-child(5) {
+		  right: .4em;
+		  top: 12.5em;
+		}
+
+		/* Positioning the second tier */
+		  
+
+
+		nav1>ol>li>ol {
+		  background-color: rgba(0, 0, 0, 0);
+		  width: 0;
+		  height: 0;
+		  display: block;
+		  position: absolute;
+		  border-radius: 100%;
+		  transition: all .2s ease-in;
+		  left: 2.25em;
+		  top: 2.25em;
+		  left: 0;
+		  top: 0;/*z-index: 1;*//*border: 1px dotted yellow;*/
+		}
+
+		nav1>ol>li:hover>ol,
+		nav1>ol>li:focus>ol,
+		nav1>ol>li.focus>ol {
+		  width: 15em;
+		  height: 15em;
+		  /*z-index: 1;*/
+			/*top: -4.75;
+			left: -4.75;*/
+		  margin-top: -5.25em;
+		  margin-left: -5.25em;
+		  background-color: rgba(0, 0, 0, 0.6);
+		}
+
+		nav1>ol>li>ol>li,
+		nav1>ol>li>ol>li a {
+		  position: absolute;
+		  /*border-color: #99f;*/
+		  transition: all .2s ease-in;
+		  top: 0;
+		  left: 0;/*z-index: 1;*//*left: 4.5em;
+			top: 0;*/
+		}
+
+		nav1>ol>li>ol>li a {
+		  border-color: #f60;
+		  box-shadow: none;
+		  transition: all .2s ease-in;
+		  display: none;
+		}
+
+		nav1>ol>li:hover>ol>li,
+		nav1>ol>li:focus>ol>li,
+		nav1>ol>li.focus>ol>li { /*box-shadow: 0 0 1.5em rgba(50, 50, 50, 0.75);*/ z-index: 5; }
+
+		nav1>ol>li:hover>ol>li a,
+		nav1>ol>li:focus>ol>li a,
+		nav1>ol>li.focus>ol>li a {
+		  background-color: #000;
+		  box-shadow: none;
+		  z-index: 5;
+		  display: block;
+		}
+
+		nav1>ol>li>ol>li a:hover,
+		nav1>ol>li>ol>li a:focus {
+		  background-color: #222;
+		  box-shadow: 0 0 1.5em rgba(0, 0, 0, 1);
+		}
+
+		/* Position individual items */
+		  
+
+
+		nav1>ol>li:hover>ol>li:nth-child(1),
+		nav1>ol>li:focus>ol>li:nth-child(1),
+		nav1>ol>li.focus>ol>li:nth-child(1),
+		nav1>ol>li:nth-child(5):hover>ol>li:nth-child(3),
+		nav1>ol>li:nth-child(5):focus>ol>li:nth-child(3),
+		nav1>ol>li:nth-child(5).focus>ol>li:nth-child(3) {
+		  left: 2.75em;
+		  top: 1em;
+		}
+
+		nav1>ol>li:hover>ol>li:nth-child(2),
+		nav1>ol>li:focus>ol>li:nth-child(2),
+		nav1>ol>li.focus>ol>li:nth-child(2) {
+		  left: 7.75em;
+		  top: 1em;
+		}
+
+		nav1>ol>li:hover>ol>li:nth-child(3),
+		nav1>ol>li:focus>ol>li:nth-child(3),
+		nav1>ol>li.focus>ol>li:nth-child(3),
+		nav1>ol>li:nth-child(1):hover>ol>li:nth-child(1),
+		nav1>ol>li:nth-child(1):focus>ol>li:nth-child(1),
+		nav1>ol>li:nth-child(1).focus>ol>li:nth-child(1) {
+		  left: 10.25em;
+		  top: 5.25em;
+		}
+
+		nav1>ol>li:hover>ol>li:nth-child(4),
+		nav1>ol>li:focus>ol>li:nth-child(4),
+		nav1>ol>li.focus>ol>li:nth-child(4),
+		nav1>ol>li:nth-child(1):hover>ol>li:nth-child(2),
+		nav1>ol>li:nth-child(1):focus>ol>li:nth-child(2),
+		nav1>ol>li:nth-child(1).focus>ol>li:nth-child(2) {
+		  left: 7.75em;
+		  top: 9.5em;
+		}
+
+		nav1>ol>li:hover>ol>li:nth-child(5),
+		nav1>ol>li:focus>ol>li:nth-child(5),
+		nav1>ol>li.focus>ol>li:nth-child(5),
+		nav1>ol>li:nth-child(1):hover>ol>li:nth-child(3),
+		nav1>ol>li:nth-child(1):focus>ol>li:nth-child(3),
+		nav1>ol>li:nth-child(1).focus>ol>li:nth-child(3),
+		nav1>ol>li:nth-child(5):hover>ol>li:nth-child(1),
+		nav1>ol>li:nth-child(5):focus>ol>li:nth-child(1),
+		nav1>ol>li:nth-child(5).focus>ol>li:nth-child(1) {
+		  left: 2.75em;
+		  top: 9.5em;
+		}
+
+		nav1>ol>li:hover>ol>li:nth-child(6),
+		nav1>ol>li:focus>ol>li:nth-child(6),
+		nav1>ol>li.focus>ol>li:nth-child(6),
+		nav1>ol>li:nth-child(1):hover>ol>li:nth-child(4),
+		nav1>ol>li:nth-child(1):focus>ol>li:nth-child(4),
+		nav1>ol>li:nth-child(1).focus>ol>li:nth-child(4),
+		nav1>ol>li:nth-child(5):hover>ol>li:nth-child(2),
+		nav1>ol>li:nth-child(5):focus>ol>li:nth-child(2),
+		nav1>ol>li:nth-child(5).focus>ol>li:nth-child(2) {
+		  left: .25em;
+		  top: 5.25em;
+		}
+
+		/* Just hide anything beyond 6. */
+
+
+
+		nav1>ol>li>ol>li:nth-child(n+7),
+		nav1>ol>li:hover>ol>li:nth-child(n+7),
+		nav1>ol>li:focus>ol>li:nth-child(n+7),
+		nav1>ol>li.focus>ol>li:nth-child(n+7) { display: none; }
+
+		/* Hide from 5 items and up on the first menu. */
+		  
+
+
+		nav1>ol>li:nth-child(1):hover>ol>li:nth-child(n+5),
+		nav1>ol>li:nth-child(1):focus>ol>li:nth-child(n+5),
+		nav1>ol>li:nth-child(1).focus>ol>li:nth-child(n+5) { display: none; }
+
+		/* Hide from 4 items and up on the last menu.*/
+		  
+
+
+		nav1>ol>li:nth-child(5):hover>ol>li:nth-child(n+4),
+		nav1>ol>li:nth-child(5):focus>ol>li:nth-child(n+4),
+		nav1>ol>li:nth-child(5).focus>ol>li:nth-child(n+4) { display: none; }
+
+		/* Style links that are current page/section. */
+		  
+
+
+		nav1>ol>li a[aria-label^="Current"],
+		nav1>ol>li:hover a[aria-label^="Current"],
+		nav1>ol>li:focus a[aria-label^="Current"] {
+		  color: #666;
+		  border-color: #999;
+		}
+		}
+		 @media screen and (-ms-high-contrast: active) {
+
+		nav1>ol>li a[aria-label^="Current"],
+		nav1>ol>li:hover a[aria-label^="Current"],
+		nav1>ol>li:focus a[aria-label^="Current"] { background-color: #00c; }
+		}
+
+	</style>
+
+</head>
+
+<body id="wrapper">
+
+	<!-- /////////////////////////////////////////Navigation -->
+	<button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
+	<nav id="mm-menu" class="mm-menu">
+		<div class="mm-menu__header">
+			<h2 class="mm-menu__title">Thomas Munghono</h2>
+		</div>
+		<ul class="mm-menu__items">
+			<li class="mm-menu__item">
+			  <a class="mm-menu__link" href="index.html">
+				<span class="mm-menu__link-text"><i class="md md-home"></i> Home</span>
+			  </a>
+			</li>
+			<li class="mm-menu__item">
+			  <a class="mm-menu__link" href="single.html">
+				<span class="mm-menu__link-text"><i class="md md-person"></i> nominate a 1st Responder</span>
+			  </a>
+			</li>
+			<li class="mm-menu__item">
+			  <a class="mm-menu__link" href="archive.html">
+				<span class="mm-menu__link-text"><i class="md md-inbox"></i> share a story</span>
+			  </a>
+			</li>
+			<li class="mm-menu__item">
+			  <a class="mm-menu__link" href="contact.html">
+				<span class="mm-menu__link-text"><i class="md md-favorite"></i> Contact</span>
+			  </a>
+			</li>
+		</ul>
+	</nav><!-- /nav -->
+	
+	
+	<!-- /////////////////////////////////////////Header -->
+	<header id="intro">
+		<div class="camera_wrap camera_black_skin" id="camera_wrap_1"><!-- slideder star-->
+			<div data-thumb="images/slider-3-thumb.jpg" data-src="images/slider-3.jpg">
+				<div class="camera_caption fadeFromBottom">
+					<em> <i class="fa fa-smile-o text-default"></i> 1SMILE, Square Mile Infrastructure Leveraged for Emergencies.</em>
+				</div>
+			</div>
+			<div data-thumb="images/slider-1-thumb.jpg" data-src="images/slider-1.jpg">
+				<div class="camera_caption fadeFromBottom">
+					<em> <i class="fa fa-heart text-default"></i> repurpose 1000 1st responders</em>
+				</div>
+			</div>
+			<div data-thumb="images/slider-2-thumb.jpg" data-src="images/slider-2.jpg">
+				<div class="camera_caption fadeFromBottom">
+					<em> <i class="fa fa-motorcycle text-default"></i> retask 100 Boda Boda parking stages,</em> 
+				</div>
+			</div>
+			<div data-thumb="images/slider-4-thumb.jpg" data-src="images/slider-4.jpg">
+				<div class="camera_caption fadeFromBottom">
+					and <em> <i class="fa fa-wrench text-default"></i> retool 10 Boda Boda motorcycles</em> 
+				</div>
+			</div>
+			<div data-thumb="images/slider-5-thumb.jpg" data-src="images/slider-5.jpg">
+				<div class="camera_caption fadeFromBottom">
+					<em> <i class="fa fa-road text-default"></i> raising 1 highway. Northern Bypass (EU - funded)</em> 
+				</div>
+			</div>
+			<div data-thumb="images/slider-6-thumb.jpg" data-src="images/slider-6.jpg">
+				<div class="camera_caption fadeFromBottom">
+					  <em>to achieve 0 deaths</em>
+				</div>
+			</div>
+		</div><!-- slideder end-->
+					
+					
+	<nav1 role="navigation" tabindex="0" aria-labelledby="navLbl">
+	  <h1 id="navLbl"><i class="fa fa-ambulance fa-2x text-default"></i></h1>
+	  <ol>
+		<!-- Opportunity -->
+		<li><a href="#"><i class="fa fa-gift fa-2x text-default"></i></a>
+		  <ol>
+			<li><a href="#"><i class="fa fa-lifesaver fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-hospital-o fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-hospital-o fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-hospital-o fa-2x text-default"></i></a></li>
+		  </ol>
+		</li>
+		<!-- Motorcycles: State of the Ambulance Report. StAR. Boda Boda Ecosystem: Menace and/or Blessing -->
+		<li><a href="#myMotorcycle" data-toggle="modal" data-target="#myMotorcycle">
+				<i class="fa fa-motorcycle fa-2x text-default"></i></a>
+	
+		  <ol>
+			<!-- Accident rate: 1 BB casualty per hour, 10 deaths per day  -->
+			<li>
+				<a href="#" data-toggle="tooltip" data-placement="left" title="Accident rate: 1 BB casualty per hour, 10 deaths per day">
+					<i class="fa fa-heartbeat fa-2x text-default"></i>
+				</a>
+			</li>
+			<!-- Institutions eg Boda Boda2000 -->
+			<li><a href="#" data-toggle="tooltip" data-placement="left" title="Boda Boda support institutions"><i class="fa fa-institution fa-2x text-default"></i>
+				</a>
+			</li>
+			<!-- BB cyclists: riders, young men -->
+			<li><a href="#" data-toggle="tooltip" data-placement="left" title="300,000 Boda Boda cyclists in Kampala city"><i class="fa fa-user fa-2x text-default"></i></a></li>
+			<!-- Timeline: the history of Opportunity -->
+			<li><a href="#" data-toggle="tooltip" data-placement="left" title="Opportunity: BB is 2nd largest employer in Kampala"><i class="fa fa-history fa-2x text-default"></i></a></li>
+			<!-- Events eg, World Day of rememberance -->
+			<li><a href="#" data-toggle="tooltip" data-placement="left" title="Boda Boda Events: eg World Day of Rememberance of Accident Victims"><i class="fa fa-calendar fa-2x text-default"></i></a></li>
+			<!-- Social Innovations: Resourcefulness -->
+			<li><a href="#" data-toggle="tooltip" data-placement="left" title="Boda Boda Resourcefulness & social innovations"><i class="fa fa-lightbulb-o fa-2x text-default"></i></a></li>
+		  </ol>
+		</li>
+		<!-- Stats -->
+		<li><a href="#"><i class="fa fa-frown-o fa-2x text-default"></i></a>
+		  <ol>
+			<li><a href="#"><i class="fa fa-heartbeat fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-bar-chart-o fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-bar-chart-o fa-2x text-default"></i></a></li>
+		  </ol>
+		</li>
+		
+		<!-- Medic: State of Care and Ambulance -->
+		<li><a href="#"><i class="fa fa-trophy fa-2x text-default"></i></a>
+		  <ol>
+			<li><a href="#"><i class="fa fa-bar-chart-o fa-2x text-default"></i></a></li> <!-- stars -->
+			<li><a href="#"><i class="fa fa-quote-right fa-2x text-default"></i></a></li> <!-- quotes -->
+			<li><a href="#"><i class="fa fa-puzzle-piece fa-2x text-default"></i></a></li> <!-- challenges. puzzles -->
+			
+			<li><a href="#"><i class="fa fa-star-o fa-2x text-default"></i></a></li> <!-- SCALE Awards -->
+			<li><a href="#"><i class="fa fa-picture-o fa-2x text-default"></i></a></li> <!-- photos. images -->
+			<li><a href="#"><i class="fa fa-fire fa-2x text-default"></i></a></li> <!-- fire. innovation. -->
+		  </ol>
+		</li>
+		<!-- Gamify: Fun -->
+		<li><a href="#"><i class="fa fa-comment-o fa-2x text-default"></i></a>
+		  <ol>
+			<li><a href="#"><i class="fa fa-fb fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-envelope fa-2x text-default"></i></a></li>
+		  </ol>
+		</li>
+	  </ol>
+	</nav1>
+	
+	</header>
+	<!-- Header -->
+	
+	<!-- FAB2 Button -->
+	<div class="kc_fab_wrapper" >
+		
+	</div>
+	
+	<!-- /////////////////////////////////////////Footer -->
+	<footer>
+		<div class="wrap-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<span class="copyright">Copyright &copy; 2017 <a href="http://www.ecaitours.com" target="_blank" rel="nofollow">ECAI</a> & TLCGM</span>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline social-buttons">
+							<li><a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-fb"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline quicklinks">
+							<li><a href="#">Privacy Policy</a>
+							</li>
+							<li><a href="#">Terms of Use</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer -->
+	
+	
+	<!-- MODALS -->
+	<!-- Motorcycle -->
+	<div class="modal fade" id="myMotorcycle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Boda Boda Ecosystem: Menace and/or Blessing</h4>
+				</div>
+				<div class="modal-body">
+					<!-- ////////////Content Box 02 -->
+					<section class="box-content box-2">
+						<div class="container">
+							<div class="row heading">
+								 <div class="col-lg-12">
+									<h2>1st Responders</h2>
+									<hr class="line">
+									<div class="intro">stand up and be counted</div>
+								</div>
+							</div>
+							<div class="row box-item">
+								<ul id="da-thumbs" class="da-thumbs">
+									<li>
+										<a href="#">
+											<img src="images/1.jpg" />
+											<div><span>Taata Ken, 29</span></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/2.jpg" />
+											<div><span>Kande, 28</span></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/3.jpg" />
+											<div><span>Katalemwa, 16</span></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/4.jpg" />
+											<div><span>Alika, 19</span></div>
+										</a>
+									</li>
+									<li>	
+										<a href="#">
+											<img src="images/5.jpg" />
+											<div><span>Obo, 24</span></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/6.jpg" />
+											<div><span>Assiko, 31</span></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/7.jpg" />
+											<div><span>Kobolwa, 29</span></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/8.jpg" />
+											<div><span>Ssekandi, 20</span></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/9.jpg" />
+											<div><span>Mawejje, 18</span></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/10.jpg" />
+											<div><span>Massa, 21</span></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/11.jpg" />
+											<div><span>Kasajja, 27</span></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/12.jpg" />
+											<div><span>Kalinda, 22</span></div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	
+	<!-- Top Slider -->
+    <script src="js/jquery.js"></script>
+    <script src='js/jquery.easing.1.3.js'></script> 
+    <script src='js/camera.min.js'></script>
+    <script>
+		jQuery(function(){
+		 
+		  jQuery('#camera_wrap_1').camera({
+			height: '600px',
+			loader: 'bar',
+			pagination: true,
+			thumbnails: false
+		  });
+		});
+	</script>
+	
+	<!-- Top FAB1 -->
+	<script>
+		/* For any clicks, clear the focus class from the nav and all its descendants, essentially closing the menu when a user clicks/taps outside of it. */
+		$(document).click(function(e) {
+		  $("nav1 *, nav1").removeClass("focus");
+		});
+
+		/* Manipulate focus classes in navigation. */
+		function classy(){
+		  $("nav1 *, nav1").removeClass("focus");
+		  $("nav1:focus").addClass("focus");
+		  $("nav1 a:focus").addClass("focus");
+		  $("nav1 a:focus").parentsUntil("body").addClass("focus");
+		}
+
+		/* Delay the assigning of classes to give the :focus a chance to catch up. There has to be a better way for this. */
+		$(document).keydown(function() {
+		  setTimeout(classy, 200);
+		});
+
+		/* Find the current page and add the aria-label to its site structure parent, which you should only use if you can't do this server-side in your CMS of choice. */
+		$(document).ready(function() {
+		  var el = $("a[aria-label^='Current Page']");
+		  var elParent = el.parent().parent().parent("li").children("a");
+		  var elTxt = elParent.text();
+		  elParent.attr("aria-label", "Current Section: " + elTxt);
+		});
+	</script>
+    
+	<!-- Menu Js -->
+	<script src="js/materialMenu.js"></script>
+	<script>
+	  var menu = new Menu;
+	</script>
+	<!-- Imges-hover-content -->
+	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+	<script type="text/javascript">
+		$(function() {
+			$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+		});
+	</script>
+	
+	<!-- FAB2 Button -->
+    <script src="js/kc.fab.min.js"></script>
+	<script>
+            $(document).ready(function(){
+                var links = [
+                    {
+                        "bgcolor":"purple",
+                        "icon":"<i class='fa fa-smile-o'></i>"
+                    },
+                    {
+                        "url":"#myMotorcycle",
+                        "bgcolor":"light-purple",
+                        "color":"purple",
+                        "icon":"<i class='fa fa-phone'></i>",
+                        "target":"_blank"
+                    },
+                    {
+                        "url":"http://www.example.com",
+                        "bgcolor":"light-purple",
+                        "color":"white",
+                        "icon":"<i class='fa fa-twitter'></i>",
+                        "target":"_blank"
+                    },
+                    {
+                        "url":"http://www.example.com",
+                        "bgcolor":"light-purple",
+                        "color":"white",
+                        "icon":"<i class='fa fa-envelope'></i>",
+                        "target":"_blank"
+                    },
+                    {
+                        "url":"http://www.example.com",
+                        "bgcolor":"light-purple",
+                        "color":"white",
+                        "icon":"<i class='fa fa-music'></i>",
+                        "target":"_blank"
+                    }
+                ]
+                $('.kc_fab_wrapper').kc_fab(links);
+            })
+        </script>
+    
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
