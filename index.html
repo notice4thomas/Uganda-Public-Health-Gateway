@@ -34,8 +34,7 @@
 	<!-- FAB Button 1. top -->
 	<style>
 		body {
-		   font-size: 120%; 
-		  color: #fff;
+		  font-size: 120%; 
 		  padding: 0;
 		  margin: 0;
 		}
@@ -173,6 +172,7 @@
 		  /*border: 1px dotted yellow;*/
 		  position: fixed;
 		  top: 0;
+		  color: white;
 		  right: 0;
 		  margin: 0;
 		  padding: 1em .5em 2.3em 1.8em;
@@ -206,7 +206,7 @@
 
 		nav1 a {
 		  border-radius: 100%;
-		  border: .15em solid rgba(156, 39, 176, 1);
+		  border: .15em solid rgba(220, 0, 255, 0.61);
 		  padding: 1.5em 0;
 		  margin-top: -5px;
 		  width: 4.5em;
@@ -467,7 +467,7 @@
 
 <body id="wrapper">
 
-	<!-- /////////////////////////////////////////Navigation -->
+	<!-- /////////////////////////////////////////nav1igation -->
 	<button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
 	<nav id="mm-menu" class="mm-menu">
 		<div class="mm-menu__header">
@@ -475,32 +475,47 @@
 		</div>
 		<ul class="mm-menu__items">
 			<li class="mm-menu__item">
-			  <a class="mm-menu__link" href="index.html">
+			  <a class="mm-menu__link" href="#">
 				<span class="mm-menu__link-text"><i class="md md-home"></i> Home</span>
 			  </a>
 			</li>
 			<li class="mm-menu__item">
-			  <a class="mm-menu__link" href="single.html">
-				<span class="mm-menu__link-text"><i class="md md-person"></i> nominate a 1st Responder</span>
+			  <a class="mm-menu__link" href="#">
+				<span class="mm-menu__link-text"><i class="fa fa-sign-in text-default"></i> join the 1<i class="fa fa-smile-o text-default"></i><i class="fa fa-smile-o text-default"></i><i class="fa fa-smile-o text-default"></i>,<i class="fa fa-smile-o text-default"></i><i class="fa fa-smile-o text-default"></i><i class="fa fa-smile-o text-default"></i> smile epidemic</span>
 			  </a>
 			</li>
 			<li class="mm-menu__item">
-			  <a class="mm-menu__link" href="archive.html">
-				<span class="mm-menu__link-text"><i class="md md-inbox"></i> share a story</span>
+			  <a class="mm-menu__link" href="#">
+				<span class="mm-menu__link-text"><i class="fa fa-heartbeat text-default"></i> share an opportunity</span>
 			  </a>
 			</li>
 			<li class="mm-menu__item">
-			  <a class="mm-menu__link" href="contact.html">
-				<span class="mm-menu__link-text"><i class="md md-favorite"></i> Contact</span>
+			  <a class="mm-menu__link" href="#">
+				<span class="mm-menu__link-text"><i class="fa fa-lightbulb-o text-default"></i> tell a value Story</span>
+			  </a>
+			</li>
+			<li class="mm-menu__item">
+			  <a class="mm-menu__link" href="#">
+				<span class="mm-menu__link-text"><i class="fa fa-map-marker text-default"></i> rate a local clinic</span>
+			  </a>
+			</li>
+			<li class="mm-menu__item">
+			  <a class="mm-menu__link" href="#">
+				<span class="mm-menu__link-text"><i class="fa fa-wrench text-default"></i> Settings</span>
+			  </a>
+			</li>
+			<li class="mm-menu__item">
+			  <a class="mm-menu__link" href="#">
+				<span class="mm-menu__link-text"><i class="fa fa-sign-out text-default"></i> Logout</span>
 			  </a>
 			</li>
 		</ul>
-	</nav><!-- /nav -->
+	</nav><!-- /nav1 -->
 	
 	
 	<!-- /////////////////////////////////////////Header -->
 	<header id="intro">
-		<div class="camera_wrap camera_black_skin" id="camera_wrap_1"><!-- slideder star-->
+		<div class="camera_wrap camera_purple_skin" id="camera_wrap_1"><!-- slideder star-->
 			<div data-thumb="images/slider-3-thumb.jpg" data-src="images/slider-3.jpg">
 				<div class="camera_caption fadeFromBottom">
 					<em> <i class="fa fa-smile-o text-default"></i> 1SMILE, Square Mile Infrastructure Leveraged for Emergencies.</em>
@@ -532,76 +547,92 @@
 				</div>
 			</div>
 		</div><!-- slideder end-->
-					
-					
-	<nav1 role="navigation" tabindex="0" aria-labelledby="navLbl">
-	  <h1 id="navLbl"><i class="fa fa-ambulance fa-2x text-default"></i></h1>
+					  
+	<nav1 role="nav1igation" tabindex="0" aria-labelledby="nav1Lbl">
+	  <h1 id="nav1Lbl"><i class="fa fa-motorcycle fa-2x text-default"></i></h1>
 	  <ol>
-		<!-- Opportunity -->
-		<li><a href="#"><i class="fa fa-gift fa-2x text-default"></i></a>
+		<!-- AMBULANCES. Opportunity -->
+		<li><a href="#"><i class="fa fa-road fa-2x text-default"></i></a>
 		  <ol>
-			<li><a href="#"><i class="fa fa-lifesaver fa-2x text-default"></i></a></li>
-			<li><a href="#"><i class="fa fa-hospital-o fa-2x text-default"></i></a></li>
-			<li><a href="#"><i class="fa fa-hospital-o fa-2x text-default"></i></a></li>
-			<li><a href="#"><i class="fa fa-hospital-o fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-frown-o fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-clock-o fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-power-off fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-ambulance fa-2x text-default"></i></a></li>
 		  </ol>
 		</li>
-		<!-- Motorcycles: State of the Ambulance Report. StAR. Boda Boda Ecosystem: Menace and/or Blessing -->
-		<li><a href="#myMotorcycle" data-toggle="modal" data-target="#myMotorcycle">
-				<i class="fa fa-motorcycle fa-2x text-default"></i></a>
-	
+		
+		<!-- care SYNERGIES
+		Motorcycles: State of the Ambulance Report. StAR. Boda Boda Ecosystem: Menace and/or Blessing -->
+		<li><a href="#" data-toggle="tooltip" data-placement="left" title="Ambulance response time">
+				<i class="fa fa-heartbeat fa-2x text-default"></i></a>
 		  <ol>
+			<!-- Social Innovations: Resourcefulness -->
+			<li><a href="#" data-toggle="tooltip" data-placement="left" title="Boda Boda Resourcefulness & social innovations"><i class="fa fa-signal fa-2x text-default"></i></a></li>
 			<!-- Accident rate: 1 BB casualty per hour, 10 deaths per day  -->
 			<li>
 				<a href="#" data-toggle="tooltip" data-placement="left" title="Accident rate: 1 BB casualty per hour, 10 deaths per day">
-					<i class="fa fa-heartbeat fa-2x text-default"></i>
+					<i class="fa fa-eyedropper fa-2x text-default"></i>
 				</a>
 			</li>
 			<!-- Institutions eg Boda Boda2000 -->
-			<li><a href="#" data-toggle="tooltip" data-placement="left" title="Boda Boda support institutions"><i class="fa fa-institution fa-2x text-default"></i>
+			<li><a href="#" data-toggle="tooltip" data-placement="left" title="Boda Boda support institutions"><i class="fa fa-puzzle-piece fa-2x text-default"></i>
 				</a>
 			</li>
 			<!-- BB cyclists: riders, young men -->
 			<li><a href="#" data-toggle="tooltip" data-placement="left" title="300,000 Boda Boda cyclists in Kampala city"><i class="fa fa-user fa-2x text-default"></i></a></li>
 			<!-- Timeline: the history of Opportunity -->
-			<li><a href="#" data-toggle="tooltip" data-placement="left" title="Opportunity: BB is 2nd largest employer in Kampala"><i class="fa fa-history fa-2x text-default"></i></a></li>
+			<li><a href="#" data-toggle="tooltip" data-placement="left" title="Opportunity: BB is 2nd largest employer in Kampala"><i class="fa fa-flask fa-2x text-default"></i></a></li>
 			<!-- Events eg, World Day of rememberance -->
-			<li><a href="#" data-toggle="tooltip" data-placement="left" title="Boda Boda Events: eg World Day of Rememberance of Accident Victims"><i class="fa fa-calendar fa-2x text-default"></i></a></li>
-			<!-- Social Innovations: Resourcefulness -->
-			<li><a href="#" data-toggle="tooltip" data-placement="left" title="Boda Boda Resourcefulness & social innovations"><i class="fa fa-lightbulb-o fa-2x text-default"></i></a></li>
-		  </ol>
-		</li>
-		<!-- Stats -->
-		<li><a href="#"><i class="fa fa-frown-o fa-2x text-default"></i></a>
-		  <ol>
-			<li><a href="#"><i class="fa fa-heartbeat fa-2x text-default"></i></a></li>
-			<li><a href="#"><i class="fa fa-bar-chart-o fa-2x text-default"></i></a></li>
-			<li><a href="#"><i class="fa fa-bar-chart-o fa-2x text-default"></i></a></li>
+			<li><a href="#" data-toggle="tooltip" data-placement="left" title="Boda Boda Events: eg World Day of Rememberance of Accident Victims"><i class="fa fa-bell fa-2x text-default"></i></a></li>
 		  </ol>
 		</li>
 		
-		<!-- Medic: State of Care and Ambulance -->
+		<!-- value STORIES. Problem Space: Stats -->
+		<li><a href="#"><i class="fa fa-lightbulb-o fa-2x text-default"></i></a>
+		  <ol>
+			<li><a href="#"><i class="fa fa-female fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-child fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-star-o fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-paw fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-comment-o fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-history fa-2x text-default"></i></a></li>
+		  </ol>
+		</li>
+		
+		
+		<!-- care SPACES. SITES. LifeSaver Target: 1mn smiles. synergies, stories, sites-->
+		<li><a href="#"><i class="fa fa-map-marker fa-2x text-default"></i></a>
+		  <ol>
+			<li><a href="#"><i class="fa fa-medkit fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-hospital-o fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-stethoscope fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-bomb fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-flag fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-umbrella fa-2x text-default"></i></a></li>
+		  </ol>
+		</li>
+		
+		<!-- SCALE Awards. State of Care and Ambulance -->
 		<li><a href="#"><i class="fa fa-trophy fa-2x text-default"></i></a>
 		  <ol>
 			<li><a href="#"><i class="fa fa-bar-chart-o fa-2x text-default"></i></a></li> <!-- stars -->
-			<li><a href="#"><i class="fa fa-quote-right fa-2x text-default"></i></a></li> <!-- quotes -->
-			<li><a href="#"><i class="fa fa-puzzle-piece fa-2x text-default"></i></a></li> <!-- challenges. puzzles -->
-			
-			<li><a href="#"><i class="fa fa-star-o fa-2x text-default"></i></a></li> <!-- SCALE Awards -->
-			<li><a href="#"><i class="fa fa-picture-o fa-2x text-default"></i></a></li> <!-- photos. images -->
-			<li><a href="#"><i class="fa fa-fire fa-2x text-default"></i></a></li> <!-- fire. innovation. -->
-		  </ol>
-		</li>
-		<!-- Gamify: Fun -->
-		<li><a href="#"><i class="fa fa-comment-o fa-2x text-default"></i></a>
-		  <ol>
-			<li><a href="#"><i class="fa fa-fb fa-2x text-default"></i></a></li>
-			<li><a href="#"><i class="fa fa-twitter fa-2x text-default"></i></a></li>
-			<li><a href="#"><i class="fa fa-envelope fa-2x text-default"></i></a></li>
+			<li><a href="#"><i class="fa fa-life-saver fa-2x text-default"></i></a></li> <!-- quotes -->
+			<li><a href="#"><i class="fa fa-graduation-cap fa-2x text-default"></i></a></li> <!-- challenges. puzzles -->
+			<li><a href="#"><i class="fa fa-thumbs-up fa-2x text-default"></i></a></li> <!-- SCALE Awards -->
+			<li><a href="#"><i class="fa fa-bullseye fa-2x text-default"></i></a></li> <!-- photos. images -->
+			<li><a href="#"><i class="fa fa-cash fa-2x text-default"></i></a></li> <!-- fire. innovation. -->
 		  </ol>
 		</li>
 	  </ol>
 	</nav1>
+	
+				<a a href="#" data-toggle="modal" data-target="#myMotorcycle21">
+					<i class="fa fa-heartbeat fa-2x text-default"></i>
+				</a>
+				
+				<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+				  Launch demo modal
+				</button>
 	
 	</header>
 	<!-- Header -->
@@ -646,7 +677,7 @@
 	
 	<!-- MODALS -->
 	<!-- Motorcycle -->
-	<div class="modal fade" id="myMotorcycle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade" id="myMotorcycle21" tabindex="-1" role="dialog" aria-labelledby="myMotorcycle21" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -773,12 +804,12 @@
 	
 	<!-- Top FAB1 -->
 	<script>
-		/* For any clicks, clear the focus class from the nav and all its descendants, essentially closing the menu when a user clicks/taps outside of it. */
+		/* For any clicks, clear the focus class from the nav1 and all its descendants, essentially closing the menu when a user clicks/taps outside of it. */
 		$(document).click(function(e) {
 		  $("nav1 *, nav1").removeClass("focus");
 		});
 
-		/* Manipulate focus classes in navigation. */
+		/* Manipulate focus classes in nav1igation. */
 		function classy(){
 		  $("nav1 *, nav1").removeClass("focus");
 		  $("nav1:focus").addClass("focus");
@@ -805,7 +836,8 @@
 	<script>
 	  var menu = new Menu;
 	</script>
-	<!-- Imges-hover-content -->
+	
+	<!-- Images-hover-content -->
 	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
 	<script type="text/javascript">
 		$(function() {
@@ -854,7 +886,7 @@
                 $('.kc_fab_wrapper').kc_fab(links);
             })
         </script>
-    
+	
 	<!-- Bootstrap Core JavaScript -->
 	<script src="js/bootstrap.min.js"></script>
 </body>
