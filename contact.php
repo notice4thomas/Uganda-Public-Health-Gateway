@@ -77,17 +77,17 @@ if(isset($_POST['name']))
 			</li>
 			<li class="mm-menu__item">
 			  <a class="mm-menu__link" href="single.html">
-				<span class="mm-menu__link-text"><i class="md md-person"></i> Folio</span>
+				<span class="mm-menu__link-text"><i class="md md-person"></i> Become a partner</span>
 			  </a>
 			</li>
 			<li class="mm-menu__item">
 			  <a class="mm-menu__link" href="archive.html">
-				<span class="mm-menu__link-text"><i class="md md-inbox"></i> Blog</span>
+				<span class="mm-menu__link-text"><i class="md md-inbox"></i> Host an event</span>
 			  </a>
 			</li>
 			<li class="mm-menu__item">
 			  <a class="mm-menu__link" href="contact.html">
-				<span class="mm-menu__link-text"><i class="md md-favorite"></i> Contact</span>
+				<span class="mm-menu__link-text"><i class="md md-favorite"></i> Contact us</span>
 			  </a>
 			</li>
 		</ul>
@@ -131,8 +131,7 @@ if(isset($_POST['name']))
 					<div class="widget wid-about">
 						<div class="heading"><h4>Shortly About 1SMILE</h4></div>
 						<div class="content">
-							<img src="images/thomas.png" />
-							<p>.</p>
+							<p>The 1SMILE project enables first responder boda boda riders who want to eliminate road accident casualties at 10 high volume blackspots on the Northern corridor of East Africa by reducing emergency response time from 90 to 10 minutes and retooling 100 Boda-Bodas into BBAs (boda boda ambulances) in 1000 days.</p>
 						</div>
 					</div>
 					<div class="widget wid-gallery">
