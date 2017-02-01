@@ -20,7 +20,7 @@
 }
 .camera_wrap {
 	display: none;
-	float: left;
+	/*float: left;*/
 	position: relative;
 	z-index: 0;
 }
@@ -210,7 +210,7 @@
 }
 .camera_wrap .camera_pag .camera_pag_ul {
 	list-style: none;
-	margin: 0;
+	margin: -50px 0 0 0;
 	padding: 0;
 	text-align: right;
 }
@@ -221,7 +221,7 @@
 	cursor: pointer;
 	display: inline-block;
 	height: 16px;
-	margin: 20px 5px;
+	margin: 8px 8px -56px 8px;
 	position: relative;
 	text-align: left;
 	text-indent: -9999px;
@@ -425,6 +425,7 @@
 }
 .camera_caption {
 	color: #fff;
+	font-size: 1.2em;
 }
 .camera_caption > div {
 	background: #000;
