@@ -211,9 +211,7 @@ nav1>ol>li.focus { /* Keep this to make sure only the current item appears above
 
 nav1>ol>li:nth-child(n+6) { display: none; }
 
-/* Positioning the first tier */
-
-
+/* Positioning the first tier/ constellation */
 
 nav1:hover>ol>li:nth-child(1),
 nav1:focus>ol>li:nth-child(1),
@@ -252,8 +250,6 @@ nav1.focus>ol>li:nth-child(5) {
 
 /* Positioning the second tier */
   
-
-
 nav1>ol>li>ol {
   background-color: rgba(0, 0, 0, 0);
   width: 0;
@@ -278,7 +274,7 @@ nav1>ol>li.focus>ol {
 	left: -4.75;*/
   margin-top: -5.25em;
   margin-left: -5.25em;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(156, 39, 176, 0.5);
 }
 
 nav1>ol>li>ol>li,
@@ -318,15 +314,13 @@ nav1>ol>li>ol>li a:focus {
 }
 
 /* Position individual items */
-  
-
 
 nav1>ol>li:hover>ol>li:nth-child(1),
 nav1>ol>li:focus>ol>li:nth-child(1),
 nav1>ol>li.focus>ol>li:nth-child(1),
-nav1>ol>li:nth-child(5):hover>ol>li:nth-child(3),
-nav1>ol>li:nth-child(5):focus>ol>li:nth-child(3),
-nav1>ol>li:nth-child(5).focus>ol>li:nth-child(3) {
+nav1>ol>li:nth-child(5):hover>ol>li:nth-child(4),
+nav1>ol>li:nth-child(5):focus>ol>li:nth-child(4),
+nav1>ol>li:nth-child(5).focus>ol>li:nth-child(4) {
   left: 2.75em;
   top: 1em;
 }
@@ -391,23 +385,23 @@ nav1>ol>li:nth-child(5).focus>ol>li:nth-child(2) {
 nav1>ol>li>ol>li:nth-child(n+7),
 nav1>ol>li:hover>ol>li:nth-child(n+7),
 nav1>ol>li:focus>ol>li:nth-child(n+7),
-nav1>ol>li.focus>ol>li:nth-child(n+7) { display: none; }
+nav1>ol>li.focus>ol>li:nth-child(n+7) {  }
 
-/* Hide from 5 items and up on the first menu. */
+/* Hide from 5 items and up on the first  star constellation / first menu. */
   
 
 
-nav1>ol>li:nth-child(1):hover>ol>li:nth-child(n+5),
-nav1>ol>li:nth-child(1):focus>ol>li:nth-child(n+5),
-nav1>ol>li:nth-child(1).focus>ol>li:nth-child(n+5) { display: none; }
+nav1>ol>li:nth-child(1):hover>ol>li:nth-child(n+7),
+nav1>ol>li:nth-child(1):focus>ol>li:nth-child(n+7),
+nav1>ol>li:nth-child(1).focus>ol>li:nth-child(n+7) { display: none; }
 
-/* Hide from 4 items and up on the last menu.*/
+/* Hide from 7 items and up on the second star constellation / last menu.*/
   
 
 
-nav1>ol>li:nth-child(5):hover>ol>li:nth-child(n+4),
-nav1>ol>li:nth-child(5):focus>ol>li:nth-child(n+4),
-nav1>ol>li:nth-child(5).focus>ol>li:nth-child(n+4) { display: none; }
+nav1>ol>li:nth-child(7):hover>ol>li:nth-child(n+6),
+nav1>ol>li:nth-child(7):focus>ol>li:nth-child(n+6),
+nav1>ol>li:nth-child(7).focus>ol>li:nth-child(n+6) { display: none; }
 
 /* Style links that are current page/section. */
   

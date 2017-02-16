@@ -23,8 +23,8 @@
   height:400px;
   position:fixed;
   right:-200px;
-  top:40px;
-  bottom: 100px;
+  top:-600px;
+  bottom: 500px;
   float:right;
 }
 .sub_fab_btns_wrapper{
